@@ -24,7 +24,7 @@ public class Rotator : MonoBehaviour
         {
             Vector2 delta = (Vector2)Input.mousePosition - lastTouchPosition;
             transform.Rotate(Vector3.up, -delta.x * rotationSpeed * Time.deltaTime, Space.World);
-            //transform.Rotate(Vector3.right, delta.y * rotationSpeed * Time.deltaTime, Space.World);
+            transform.Rotate(Vector3.right, delta.y * rotationSpeed * Time.deltaTime, Space.World);
             lastTouchPosition = Input.mousePosition;
         }
 #else //for mobile
@@ -40,7 +40,7 @@ public class Rotator : MonoBehaviour
             {
                 Vector2 delta = touch.position - lastTouchPosition;
                 transform.Rotate(Vector3.up, -delta.x * rotationSpeed * Time.deltaTime, Space.World);
-                //transform.Rotate(Vector3.right, delta.y * rotationSpeed * Time.deltaTime, Space.World);
+                transform.Rotate(Vector3.right, delta.y * rotationSpeed * Time.deltaTime, Space.World);
                 lastTouchPosition = touch.position;
             }
             else if (touch.phase == TouchPhase.Ended)
