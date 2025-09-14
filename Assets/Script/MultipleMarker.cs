@@ -16,8 +16,9 @@ public class MultipleMarker : MonoBehaviour
     }
 
     public List<CatData> meow = new List<CatData>();
-
-    private Dictionary<string, GameObject> spawnedCats = new Dictionary<string, GameObject>();
+    private GameObject currCat = null;
+    private string currMarker = "";
+    private bool canSpawn = true;
 
     private void OnEnable()
     {
@@ -30,28 +31,30 @@ public class MultipleMarker : MonoBehaviour
 
     void OnTrackedImageChanged(ARTrackedImagesChangedEventArgs args)
     {
+        if (!canSpawn) return;
+
         foreach (var trackedImage in args.added)
         {
-            SpawnAnimal(trackedImage);
+            SpawnCat(trackedImage);
         }
 
         foreach (var trackedImage in args.updated)
         {
-            UpdateAnimal(trackedImage);
-        }
-
-        foreach (var trackedImage in args.removed)
-        {
-            if (spawnedCats.ContainsKey(trackedImage.referenceImage.name))
+            if (trackedImage.trackingState == UnityEngine.XR.ARSubsystems.TrackingState.Tracking)
             {
-                Destroy(spawnedCats[trackedImage.referenceImage.name]);
-                spawnedCats.Remove(trackedImage.referenceImage.name);
+                SpawnCat(trackedImage);
             }
         }
+
     }
-    void SpawnAnimal(ARTrackedImage trackedImage)
+    void SpawnCat(ARTrackedImage trackedImage)
     {
         string name = trackedImage.referenceImage.name;
+
+        if( currCat != null )
+        {
+            return;
+        }
 
         foreach (var animal in meow)
         {
@@ -60,20 +63,21 @@ public class MultipleMarker : MonoBehaviour
                 GameObject newAnimal = Instantiate(animal.prefab, trackedImage.transform.position, trackedImage.transform.rotation);
                 newAnimal.transform.localPosition = new Vector3(0, 0, 0.05f);
                 newAnimal.transform.SetParent(trackedImage.transform);
-                spawnedCats[name] = newAnimal;
+                currCat = newAnimal;
+                canSpawn = false;
+                break;
             }
         }
     }
 
-    void UpdateAnimal(ARTrackedImage trackedImage)
+    public void ClearObject()
     {
-        string name = trackedImage.referenceImage.name;
-
-        if (spawnedCats.ContainsKey(name))
+        if (currCat != null)
         {
-            GameObject animal = spawnedCats[name];
-            animal.transform.position = trackedImage.transform.position;
-            animal.transform.rotation = trackedImage.transform.rotation;
+            Destroy(currCat);
+            currCat = null;
         }
+        currMarker = "";
+        canSpawn = true;
     }
 }
