@@ -50,15 +50,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -5919265813508830380, guid: 3bb6bf8e329ec624f9fa7dbd66c45a34, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.01
+      value: 0.008
       objectReference: {fileID: 0}
     - target: {fileID: -5919265813508830380, guid: 3bb6bf8e329ec624f9fa7dbd66c45a34, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.01
+      value: 0.008
       objectReference: {fileID: 0}
     - target: {fileID: -5919265813508830380, guid: 3bb6bf8e329ec624f9fa7dbd66c45a34, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.01
+      value: 0.008
       objectReference: {fileID: 0}
     - target: {fileID: -5919265813508830380, guid: 3bb6bf8e329ec624f9fa7dbd66c45a34, type: 3}
       propertyPath: m_LocalPosition.x
@@ -100,6 +100,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: -5644133064174452605, guid: 3bb6bf8e329ec624f9fa7dbd66c45a34, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: e654bbafc43ae004cadfadc364136675, type: 2}
     - target: {fileID: 8128668236925612103, guid: 3bb6bf8e329ec624f9fa7dbd66c45a34, type: 3}
       propertyPath: m_Name
       value: white_tiger_rigged_animated Variant

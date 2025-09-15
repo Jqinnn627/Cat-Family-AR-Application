@@ -60,6 +60,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 1.1419983
       objectReference: {fileID: 0}
+    - target: {fileID: -5644133064174452605, guid: 947104a78bcdd9b4e80cefb20350d627, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: c34d37bff417e8844a26c78c70737b3c, type: 2}
     - target: {fileID: 8128668236925612103, guid: 947104a78bcdd9b4e80cefb20350d627, type: 3}
       propertyPath: m_Name
       value: lion_from_cotw_game Variant

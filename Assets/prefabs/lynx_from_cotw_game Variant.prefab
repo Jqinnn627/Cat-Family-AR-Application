@@ -60,6 +60,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180
       objectReference: {fileID: 0}
+    - target: {fileID: -5644133064174452605, guid: 323f5fc353224a741a984601de26dd48, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 2a3db700c02f3ff4db3b914ea234a1d9, type: 2}
     - target: {fileID: 8128668236925612103, guid: 323f5fc353224a741a984601de26dd48, type: 3}
       propertyPath: m_Name
       value: lynx_from_cotw_game Variant

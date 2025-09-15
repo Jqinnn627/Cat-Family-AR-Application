@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "R58MA4G17GA",
         "name": "com.unity.template.cat_family_ar_application",
-        "processId": 9534,
+        "processId": 18623,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -438,6 +438,24 @@
             "deviceId": "R58MA4G17GA",
             "name": "com.unity.template.cat_family_ar_application",
             "processId": 9534,
+            "exited": false
+        },
+        {
+            "deviceId": "R58MA4G17GA",
+            "name": "com.unity.template.cat_family_ar_application",
+            "processId": 16838,
+            "exited": false
+        },
+        {
+            "deviceId": "R58MA4G17GA",
+            "name": "com.unity.template.cat_family_ar_application",
+            "processId": 17693,
+            "exited": false
+        },
+        {
+            "deviceId": "R58MA4G17GA",
+            "name": "com.unity.template.cat_family_ar_application",
+            "processId": 18623,
             "exited": false
         },
         {

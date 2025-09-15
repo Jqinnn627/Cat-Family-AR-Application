@@ -48,6 +48,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90.71
       objectReference: {fileID: 0}
+    - target: {fileID: -5644133064174452605, guid: aefbd77c8e34e7748a39b1be6a8f2981, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: ad0e57c6768575041bd6331c060fb329, type: 2}
     - target: {fileID: 8128668236925612103, guid: aefbd77c8e34e7748a39b1be6a8f2981, type: 3}
       propertyPath: m_Name
       value: floppa_rtx_on Variant
