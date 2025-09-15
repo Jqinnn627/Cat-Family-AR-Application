@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 
@@ -13,20 +15,42 @@ public class MultipleMarker : MonoBehaviour
     {
         public string markerName;
         public GameObject prefab;
+        public string name;
+        public string description;
+        public Sprite infoImage;
+        public AudioClip sound;
     }
 
     public List<CatData> meow = new List<CatData>();
+
+    [Header("UI References")]
+    public GameObject MainPanel;
+    public Button displayInfoButton;
+    public Button soundButton;
+    public GameObject infoPanel;
+    public TextMeshProUGUI catName;
+    public TextMeshProUGUI infoDescription;
+    public Image infoImageUI;
+    public AudioSource source;
+
     private GameObject currCat = null;
     private string currMarker = "";
     private bool canSpawn = true;
+    private AudioClip currSound;
 
-    private void OnEnable()
+    void OnEnable()
     {
         imageManager.trackedImagesChanged += OnTrackedImageChanged;
+        if (displayInfoButton != null ) displayInfoButton.onClick.AddListener(ShowInfo);
+
+        if (soundButton != null) soundButton.onClick.AddListener(PlaySound);
     }
-    private void OnDisable()
+    void OnDisable()
     {
         imageManager.trackedImagesChanged -= OnTrackedImageChanged;
+        if (displayInfoButton != null) displayInfoButton.onClick.RemoveListener(ShowInfo);
+
+        if (soundButton != null) soundButton.onClick.RemoveListener(PlaySound);
     }
 
     void OnTrackedImageChanged(ARTrackedImagesChangedEventArgs args)
@@ -45,7 +69,6 @@ public class MultipleMarker : MonoBehaviour
                 SpawnCat(trackedImage);
             }
         }
-
     }
     void SpawnCat(ARTrackedImage trackedImage)
     {
@@ -56,17 +79,45 @@ public class MultipleMarker : MonoBehaviour
             return;
         }
 
-        foreach (var animal in meow)
+        foreach (var cat in meow)
         {
-            if (animal.markerName == name && animal.prefab != null)
+            if (cat.markerName == name && cat.prefab != null)
             {
-                GameObject newAnimal = Instantiate(animal.prefab, trackedImage.transform.position, trackedImage.transform.rotation);
-                newAnimal.transform.localPosition = new Vector3(0, 0, 0.05f);
-                newAnimal.transform.SetParent(trackedImage.transform);
-                currCat = newAnimal;
+                GameObject newCat = Instantiate(cat.prefab, trackedImage.transform.position, trackedImage.transform.rotation);
+                //newCat.transform.SetParent(trackedImage.transform, false);
+                newCat.transform.localPosition = new Vector3(0, 0, 0.05f);
+                currCat = newCat;
+                currMarker = name;
                 canSpawn = false;
+
+                if (MainPanel != null) 
+                {
+                    MainPanel.SetActive(true);
+                    catName.text = cat.name;
+                    infoDescription.text = cat.description;
+                    infoImageUI.sprite = cat.infoImage;
+                    currSound = cat.sound;
+                }
+
                 break;
             }
+        }
+    }
+
+    public void ShowInfo()
+    {
+        infoPanel.SetActive(true);
+    }
+    public void CloseInfo()
+    {
+        infoPanel.SetActive(false);
+    }
+    public void PlaySound()
+    {
+        if (source != null && currSound != null) 
+        {
+            source.clip = currSound;
+            source.Play();
         }
     }
 
@@ -79,5 +130,10 @@ public class MultipleMarker : MonoBehaviour
         }
         currMarker = "";
         canSpawn = true;
+        MainPanel.SetActive(false);
+        infoPanel.SetActive(false);
+        source.Stop();
+        currSound = null;
+        Debug.Log("ClearObject called");
     }
 }

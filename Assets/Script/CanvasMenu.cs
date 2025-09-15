@@ -20,5 +20,4 @@ public class CanvasMenu : MonoBehaviour
     {
         infoDialogPanel.SetActive(false);
     }
-
 }
