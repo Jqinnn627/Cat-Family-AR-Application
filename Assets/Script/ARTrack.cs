@@ -6,6 +6,18 @@ public class ARTrack : MonoBehaviour
     public ARTrackedImageManager imageManager;
     public GameObject catPrefab;
 
+    private Camera arCamera;
+
+    void Awake()
+    {
+        // Find AR Camera
+        arCamera = Camera.main;
+        if (arCamera == null)
+        {
+            arCamera = FindObjectOfType<Camera>();
+        }
+    }
+
     void OnEnable()
     {
         imageManager.trackedImagesChanged += OnChanged;
@@ -20,7 +32,19 @@ public class ARTrack : MonoBehaviour
     {
         foreach (var img in e.added)
         {
-            Instantiate(catPrefab, img.transform.position, img.transform.rotation, img.transform);
+            // Always spawn in front of the marker
+            Vector3 offset = img.transform.forward * 0.07f; // 7 cm in front
+            GameObject cat = Instantiate(catPrefab, img.transform.position + offset, img.transform.rotation);
+
+            // Optional: face the AR camera
+            if (arCamera != null)
+            {
+                cat.transform.LookAt(arCamera.transform);
+                cat.transform.rotation = Quaternion.Euler(0, cat.transform.rotation.eulerAngles.y, 0);
+            }
+
+            // Parent to marker so it follows marker movement
+            cat.transform.parent = img.transform;
         }
     }
 }

@@ -114,15 +114,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8897093224900880590, guid: 3bb6bf8e329ec624f9fa7dbd66c45a34, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 0.18
       objectReference: {fileID: 0}
     - target: {fileID: 8897093224900880590, guid: 3bb6bf8e329ec624f9fa7dbd66c45a34, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 0.18
       objectReference: {fileID: 0}
     - target: {fileID: 8897093224900880590, guid: 3bb6bf8e329ec624f9fa7dbd66c45a34, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 0.18
       objectReference: {fileID: 0}
     - target: {fileID: 8897093224900880590, guid: 3bb6bf8e329ec624f9fa7dbd66c45a34, type: 3}
       propertyPath: m_LocalPosition.x
@@ -170,14 +170,14 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 2199580340203360154, guid: 3bb6bf8e329ec624f9fa7dbd66c45a34, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 948}
+      addedObject: {fileID: 1141}
   m_SourcePrefab: {fileID: -5645937942226959685, guid: 3bb6bf8e329ec624f9fa7dbd66c45a34, type: 3}
 --- !u!1 &7667400653499428043 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2199580340203360154, guid: 3bb6bf8e329ec624f9fa7dbd66c45a34, type: 3}
   m_PrefabInstance: {fileID: 8425793926416261969}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &948
+--- !u!114 &1141
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
