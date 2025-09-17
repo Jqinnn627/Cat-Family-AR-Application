@@ -1676,6 +1676,24 @@ MonoBehaviour:
     description: Black Panther
     infoImage: {fileID: 21300000, guid: 2cda4632e9457f24cb73d03f60533db9, type: 3}
     sound: {fileID: 8300000, guid: bc86b7a10b00d3844a144668b7511d07, type: 3}
+  - markerName: jaguarMarker
+    prefab: {fileID: 7321659756410208922, guid: abfd2470039e51f438d76757d9fc2c6e, type: 3}
+    name: Jaguar
+    description: Jaguar
+    infoImage: {fileID: 21300000, guid: 37ade4628ae61be45b1cfe5d95bcd6b1, type: 3}
+    sound: {fileID: 8300000, guid: 57f909a4e987b1143b8b45e831517355, type: 3}
+  - markerName: pumaMarker
+    prefab: {fileID: 1859647453254245870, guid: 7a196d02d791cac468f65b8569df7d08, type: 3}
+    name: Puma
+    description: Puma
+    infoImage: {fileID: 21300000, guid: 43e6a4f2c73478349807411a882cb9a1, type: 3}
+    sound: {fileID: 8300000, guid: 1b4429dddc5fd2c48a1071aa9b2b7abd, type: 3}
+  - markerName: LionessMarker
+    prefab: {fileID: 1885803598269831721, guid: 434a67343e08aca43a1a1ab67c217438, type: 3}
+    name: Lioness
+    description: Lioness
+    infoImage: {fileID: 21300000, guid: 18ab0266a2c80af4bb39bfeb0ca213c9, type: 3}
+    sound: {fileID: 8300000, guid: a69a59d59adf67840b4d2216470c3407, type: 3}
   MainPanel: {fileID: 2080057812}
   displayInfoButton: {fileID: 1702993806}
   soundButton: {fileID: 565986687}

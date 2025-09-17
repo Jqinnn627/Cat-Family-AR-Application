@@ -85,7 +85,8 @@ public class MultipleMarker : MonoBehaviour
             {
                 GameObject newCat = Instantiate(cat.prefab, trackedImage.transform.position, trackedImage.transform.rotation);
                 //newCat.transform.SetParent(trackedImage.transform, false);
-                newCat.transform.localPosition = new Vector3(0, 0, 0.05f);
+                //newCat.transform.localPosition = new Vector3(0, 0, 0.05f);
+                newCat.transform.position = trackedImage.transform.position + trackedImage.transform.forward * 0.02f;
                 currCat = newCat;
                 currMarker = name;
                 canSpawn = false;
@@ -118,6 +119,14 @@ public class MultipleMarker : MonoBehaviour
         {
             source.clip = currSound;
             source.Play();
+        }
+        if (currCat != null)
+        {
+            Animator animator = currCat.GetComponent<Animator>();
+            if (animator != null)
+            {
+                animator.SetTrigger("RoarTrigger");
+            }
         }
     }
 

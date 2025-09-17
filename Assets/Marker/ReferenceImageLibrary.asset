@@ -87,3 +87,33 @@ MonoBehaviour:
     m_SpecifySize: 1
     m_Name: blackPantherMarker
     m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5393078954861895620
+      m_GuidHigh: 15280148134375336092
+    m_SerializedTextureGuid:
+      m_GuidLow: 11255869403223753830
+      m_GuidHigh: 12432684001646872121
+    m_Size: {x: 0.02, y: 0.02}
+    m_SpecifySize: 1
+    m_Name: pumaMarker
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5535881273267127908
+      m_GuidHigh: 834264248952791475
+    m_SerializedTextureGuid:
+      m_GuidLow: 15682662502616904798
+      m_GuidHigh: 17656283203165058970
+    m_Size: {x: 0.02, y: 0.02}
+    m_SpecifySize: 1
+    m_Name: LionessMarker
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5692153412284019993
+      m_GuidHigh: 8626415819728777655
+    m_SerializedTextureGuid:
+      m_GuidLow: 16353910527444003562
+      m_GuidHigh: 564583323789244649
+    m_Size: {x: 0.02, y: 0.02}
+    m_SpecifySize: 1
+    m_Name: jaguarMarker
+    m_Texture: {fileID: 0}
