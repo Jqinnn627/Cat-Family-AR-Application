@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.XR.ARFoundation;
@@ -15,8 +16,12 @@ public class MultipleMarker : MonoBehaviour
     {
         public string markerName;
         public GameObject prefab;
-        public string name;
-        public string description;
+        public string nameEn;
+        public string nameCn;
+        public string nameMalay;
+        public string descriptionEn;
+        public string descriptionCn;
+        public string descriptionMalay;
         public Sprite infoImage;
         public AudioClip sound;
     }
@@ -84,8 +89,6 @@ public class MultipleMarker : MonoBehaviour
             if (cat.markerName == name && cat.prefab != null)
             {
                 GameObject newCat = Instantiate(cat.prefab, trackedImage.transform.position, trackedImage.transform.rotation);
-                //newCat.transform.SetParent(trackedImage.transform, false);
-                //newCat.transform.localPosition = new Vector3(0, 0, 0.05f);
                 newCat.transform.position = trackedImage.transform.position + trackedImage.transform.forward * 0.02f;
                 currCat = newCat;
                 currMarker = name;
@@ -94,8 +97,21 @@ public class MultipleMarker : MonoBehaviour
                 if (MainPanel != null) 
                 {
                     MainPanel.SetActive(true);
-                    catName.text = cat.name;
-                    infoDescription.text = cat.description;
+                    switch (LanguageScript.CurrentLang)
+                    {
+                        case "en":
+                            catName.text = cat.nameEn;
+                            infoDescription.text = cat.descriptionEn;
+                            break;
+                        case "cn":
+                            catName.text = cat.nameCn;
+                            infoDescription.text = cat.descriptionCn;
+                            break;
+                        case "malay":
+                            catName.text = cat.nameMalay;
+                            infoDescription.text = cat.descriptionMalay;
+                            break;
+                    }
                     infoImageUI.sprite = cat.infoImage;
                     currSound = cat.sound;
                 }

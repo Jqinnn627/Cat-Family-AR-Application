@@ -986,7 +986,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7da4fdcda27c0ba4cbd859f4d27c83db, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1050,7 +1050,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -806.9792, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &255586820
@@ -1636,62 +1636,102 @@ MonoBehaviour:
   meow:
   - markerName: MunchkinCat
     prefab: {fileID: 5398615386208794742, guid: cb9c90f0c23d3ac4d98ced504621cddf, type: 3}
-    name: Domestic Cat
-    description: Cat
+    nameEn: Domestic Cat
+    nameCn: "\u5BB6\u732B"
+    nameMalay: Kucing Domestik
+    descriptionEn: Domestic Cat
+    descriptionCn: "\u5BB6\u732B"
+    descriptionMalay: Kucing Domestik
     infoImage: {fileID: 21300000, guid: d581cf88e54023843bf8a569cecb6639, type: 3}
     sound: {fileID: 8300000, guid: 1ee1a9a487b2f4242b55696cd3f5664d, type: 3}
   - markerName: lionMarker
     prefab: {fileID: 6771847400169325059, guid: efdc9e21229673946879c65c6c103897, type: 3}
-    name: Lion
-    description: Lion
+    nameEn: Lion
+    nameCn: "\u72EE\u5B50"
+    nameMalay: singa
+    descriptionEn: Lion
+    descriptionCn: "\u72EE\u5B50"
+    descriptionMalay: singa
     infoImage: {fileID: 21300000, guid: f4a7160326c0d004e8876d4da1c3229d, type: 3}
     sound: {fileID: 8300000, guid: 1e874e37e54d5fd4fb8e5c2ed8e42029, type: 3}
   - markerName: lynxMarker
     prefab: {fileID: 1033698239983373779, guid: df974054c68736247ba0b6f1105f04cb, type: 3}
-    name: Lynx
-    description: Lynx desc
+    nameEn: Lynx
+    nameCn: "\u5C71\u732B"
+    nameMalay: kucing hutan
+    descriptionEn: Lynx
+    descriptionCn: "\u5C71\u732B"
+    descriptionMalay: kucing hutan
     infoImage: {fileID: 21300000, guid: 5f0f1e114deb99748853d462e0655ca4, type: 3}
     sound: {fileID: 8300000, guid: d685d731a1acc8a45b07375a768c2bf0, type: 3}
   - markerName: floppaMarker
     prefab: {fileID: 6911189894652632505, guid: 83f3567d0c401cc4fa397a963a75fd5b, type: 3}
-    name: Floppa
-    description: Floppa
+    nameEn: Floppa
+    nameCn: "\u72DE\u732B"
+    nameMalay: karakal
+    descriptionEn: Floppa
+    descriptionCn: "\u72DE\u732B"
+    descriptionMalay: karakal
     infoImage: {fileID: 21300000, guid: 5d6e7e1184258dd41a03a4cd2c89f5fa, type: 3}
     sound: {fileID: 8300000, guid: 25efd53e6a2547b4c8b36df496702a95, type: 3}
   - markerName: cheetahMarker
     prefab: {fileID: 6303875182085146032, guid: 2ea8d5e393207c148a94e367871d347f, type: 3}
-    name: Cheetah
-    description: Cheetah
+    nameEn: Cheetah
+    nameCn: "\u730E\u8C79"
+    nameMalay: cheetah
+    descriptionEn: Cheetah
+    descriptionCn: "\u730E\u8C79"
+    descriptionMalay: cheetah
     infoImage: {fileID: 21300000, guid: 67ac1a5ca7a011e47aec4d1959256a32, type: 3}
     sound: {fileID: 8300000, guid: 1a2ea3f1265b5d4408a039a3c8c3c3a6, type: 3}
   - markerName: whiteTigerMarker
     prefab: {fileID: 297442490583929622, guid: 0ef6548e938dfe44f9de45fce58ae0a8, type: 3}
-    name: White Tiger
-    description: White Tiger
+    nameEn: White  Tiger
+    nameCn: "\u767D\u8001\u864E"
+    nameMalay: harimau putih
+    descriptionEn: White  Tiger
+    descriptionCn: "\u767D\u8001\u864E"
+    descriptionMalay: harimau putih
     infoImage: {fileID: 21300000, guid: 67e12bbedec7e03419dd6000a374a800, type: 3}
     sound: {fileID: 8300000, guid: 0a3c9180b28cf304aa4043ee457dc758, type: 3}
   - markerName: blackPantherMarker
     prefab: {fileID: 4729049370243471200, guid: 70959e08c89b97d4e8686872f2920a0a, type: 3}
-    name: Black Panther
-    description: Black Panther
+    nameEn: Black Panther
+    nameCn: "\u9ED1\u8C79"
+    nameMalay: harimau kumbang hitam
+    descriptionEn: Black Panther
+    descriptionCn: "\u9ED1\u8C79"
+    descriptionMalay: harimau kumbang hitam
     infoImage: {fileID: 21300000, guid: 2cda4632e9457f24cb73d03f60533db9, type: 3}
     sound: {fileID: 8300000, guid: bc86b7a10b00d3844a144668b7511d07, type: 3}
   - markerName: jaguarMarker
     prefab: {fileID: 7321659756410208922, guid: abfd2470039e51f438d76757d9fc2c6e, type: 3}
-    name: Jaguar
-    description: Jaguar
+    nameEn: Jaguar
+    nameCn: "\u6377\u8C79"
+    nameMalay: Jaguar
+    descriptionEn: Jaguar
+    descriptionCn: "\u6377\u8C79"
+    descriptionMalay: Jaguar
     infoImage: {fileID: 21300000, guid: 37ade4628ae61be45b1cfe5d95bcd6b1, type: 3}
     sound: {fileID: 8300000, guid: 57f909a4e987b1143b8b45e831517355, type: 3}
   - markerName: pumaMarker
     prefab: {fileID: 1859647453254245870, guid: 7a196d02d791cac468f65b8569df7d08, type: 3}
-    name: Puma
-    description: Puma
+    nameEn: Puma
+    nameCn: "\u7F8E\u6D32\u72EE"
+    nameMalay: cougar
+    descriptionEn: Puma
+    descriptionCn: "\u7F8E\u6D32\u72EE"
+    descriptionMalay: cougar
     infoImage: {fileID: 21300000, guid: 43e6a4f2c73478349807411a882cb9a1, type: 3}
     sound: {fileID: 8300000, guid: 1b4429dddc5fd2c48a1071aa9b2b7abd, type: 3}
   - markerName: LionessMarker
     prefab: {fileID: 1885803598269831721, guid: 434a67343e08aca43a1a1ab67c217438, type: 3}
-    name: Lioness
-    description: Lioness
+    nameEn: Lioness
+    nameCn: "\u6BCD\u72EE"
+    nameMalay: singa betina
+    descriptionEn: Lioness
+    descriptionCn: "\u6BCD\u72EE"
+    descriptionMalay: singa betina
     infoImage: {fileID: 21300000, guid: 18ab0266a2c80af4bb39bfeb0ca213c9, type: 3}
     sound: {fileID: 8300000, guid: 1e874e37e54d5fd4fb8e5c2ed8e42029, type: 3}
   MainPanel: {fileID: 2080057812}
@@ -3129,7 +3169,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7da4fdcda27c0ba4cbd859f4d27c83db, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -3193,7 +3233,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -289.77103, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1932702625
