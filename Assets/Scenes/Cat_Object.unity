@@ -1693,7 +1693,7 @@ MonoBehaviour:
     name: Lioness
     description: Lioness
     infoImage: {fileID: 21300000, guid: 18ab0266a2c80af4bb39bfeb0ca213c9, type: 3}
-    sound: {fileID: 8300000, guid: a69a59d59adf67840b4d2216470c3407, type: 3}
+    sound: {fileID: 8300000, guid: 1e874e37e54d5fd4fb8e5c2ed8e42029, type: 3}
   MainPanel: {fileID: 2080057812}
   displayInfoButton: {fileID: 1702993806}
   soundButton: {fileID: 565986687}
