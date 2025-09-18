@@ -37,6 +37,7 @@ public class MultipleMarker : MonoBehaviour
     public TextMeshProUGUI infoDescription;
     public Image infoImageUI;
     public AudioSource source;
+    public Image scanner;
 
     private GameObject currCat = null;
     private string currMarker = "";
@@ -97,6 +98,7 @@ public class MultipleMarker : MonoBehaviour
                 if (MainPanel != null) 
                 {
                     MainPanel.SetActive(true);
+                    scanner.enabled = false;
                     switch (LanguageScript.CurrentLang)
                     {
                         case "en":
@@ -159,6 +161,7 @@ public class MultipleMarker : MonoBehaviour
         infoPanel.SetActive(false);
         source.Stop();
         currSound = null;
+        scanner.enabled = true;
         Debug.Log("ClearObject called");
     }
 }
