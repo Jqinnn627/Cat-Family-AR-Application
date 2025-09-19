@@ -14,6 +14,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cat_Object.unity
     guid: 9877536f78cef994caf4ed460d9831cb
+  - enabled: 1
+    path: Assets/Scenes/QuizModule.unity
+    guid: b6aaebe40d4c4b847a41377737e4a5b6
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 6ee72d15cf39dd748a13eac57397b9af, type: 2}
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 0465d33c6aee55f44b0237db8b0e0259, type: 2}
