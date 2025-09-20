@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1995,7 +1995,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 869e204de0d95a14b8c7c0c68bc18519, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enViewCatImgBtn: {fileID: 21300000, guid: 6f67e8a0501b41d4e8846fae7c2cebdd, type: 3}
+  cnViewCatImgBtn: {fileID: 0}
+  malayViewCatImgBtn: {fileID: 0}
+  enQuizImgBtn: {fileID: 21300000, guid: d053b79be9cca2748af9e87dbf36a763, type: 3}
+  cnQuizImgBtn: {fileID: 0}
+  malayQuizImgBtn: {fileID: 0}
+  enQuitImgBtn: {fileID: 21300000, guid: 59b608c3d1001354092030a2315f83d6, type: 3}
+  cnQuitImgBtn: {fileID: 0}
+  malayQuitImgBtn: {fileID: 0}
   languagePanel: {fileID: 1964017063}
+  viewCatImgUI: {fileID: 576874186}
+  quizImgUI: {fileID: 1616494948}
+  quitImgUI: {fileID: 941365753}
 --- !u!4 &1749971781
 Transform:
   m_ObjectHideFlags: 0
