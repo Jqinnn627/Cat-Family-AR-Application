@@ -4,6 +4,7 @@ using UnityEngine.XR.Interaction.Toolkit.Inputs.Readers;
 using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.UIElements;
+using UnityEngine.InputSystem.XR.Haptics;
 
 
 public class Quiz : MonoBehaviour
@@ -19,11 +20,11 @@ public class Quiz : MonoBehaviour
 
     private QuizQnA[] quizData = new QuizQnA[]
     {
-        new QuizQnA { question= "Question 1", answer= true },
-        new QuizQnA { question= "Question 2", answer= true },
-        new QuizQnA { question= "Question 3", answer= true },
-        new QuizQnA { question= "Question 4", answer= true },
-        new QuizQnA { question= "Question 5", answer= true },
+        new QuizQnA { question= "Munchkin Cat is a cat who loves \n Munchies cookies", answer= false },
+        new QuizQnA { question= "Leopard is a kind of lion", answer= false },
+        new QuizQnA { question= "Tigers are both carnivor and herbivore", answer= false },
+        new QuizQnA { question= "Ocelot is a type of Felinae", answer= true },
+        new QuizQnA { question= "Cheetah is a pantherinae.", answer= false },
     };
     private int question_counter = 0;
     private int score = 0;
@@ -93,6 +94,7 @@ public class Quiz : MonoBehaviour
         else
         {
             Debug.Log("Noob");
+            Handheld.Vibrate();
         }
     }
 }
