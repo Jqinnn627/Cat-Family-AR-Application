@@ -1,9 +1,9 @@
 {
-    "m_SelectedDeviceId": "AKJBVB3113001317",
+    "m_SelectedDeviceId": "R58MA4G17GA",
     "m_SelectedPackage": {
-        "deviceId": "AKJBVB3113001317",
+        "deviceId": "R58MA4G17GA",
         "name": "com.unity.template.cat_family_ar_application",
-        "processId": 15375,
+        "processId": 12649,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -747,6 +747,24 @@
             "exited": false
         },
         {
+            "deviceId": "R58MA4G17GA",
+            "name": "com.unity.template.cat_family_ar_application",
+            "processId": 21111,
+            "exited": false
+        },
+        {
+            "deviceId": "R58MA4G17GA",
+            "name": "com.unity.template.cat_family_ar_application",
+            "processId": 6386,
+            "exited": false
+        },
+        {
+            "deviceId": "R58MA4G17GA",
+            "name": "com.unity.template.cat_family_ar_application",
+            "processId": 12649,
+            "exited": false
+        },
+        {
             "deviceId": "AKJBVB3113001317",
             "name": "com.hihonor.android.launcher",
             "processId": 4072,
@@ -774,48 +792,6 @@
             "deviceId": "AKJBVB3113001317",
             "name": "com.unity.template.cat_family_ar_application",
             "processId": 19768,
-            "exited": false
-        },
-        {
-            "deviceId": "AKJBVB3113001317",
-            "name": "com.unity.template.cat_family_ar_application",
-            "processId": 31153,
-            "exited": false
-        },
-        {
-            "deviceId": "AKJBVB3113001317",
-            "name": "com.unity.template.cat_family_ar_application",
-            "processId": 7228,
-            "exited": false
-        },
-        {
-            "deviceId": "AKJBVB3113001317",
-            "name": "com.unity.template.cat_family_ar_application",
-            "processId": 9391,
-            "exited": false
-        },
-        {
-            "deviceId": "AKJBVB3113001317",
-            "name": "com.unity.template.cat_family_ar_application",
-            "processId": 10439,
-            "exited": false
-        },
-        {
-            "deviceId": "AKJBVB3113001317",
-            "name": "com.unity.template.cat_family_ar_application",
-            "processId": 16427,
-            "exited": false
-        },
-        {
-            "deviceId": "AKJBVB3113001317",
-            "name": "com.unity.template.cat_family_ar_application",
-            "processId": 13046,
-            "exited": false
-        },
-        {
-            "deviceId": "AKJBVB3113001317",
-            "name": "com.unity.template.cat_family_ar_application",
-            "processId": 15375,
             "exited": false
         }
     ],

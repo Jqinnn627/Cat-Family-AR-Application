@@ -20,33 +20,54 @@ public class LanguageManager : MonoBehaviour
     public Button viewCatImgUI;
     public Button quizImgUI;
     public Button quitImgUI;
-     
-   public void EnLang()
+
+    private void Start()
+    {
+       string lang = LanguageScript.GetLanguage();
+       changeLang(lang);
+    }
+    public void EnLang()
     {
         LanguageScript.SetLanguage("en");
         languagePanel.SetActive(false);
-        viewCatImgUI.image.sprite = enViewCatImgBtn;
-        quizImgUI.image.sprite = enQuizImgBtn;
-        quitImgUI.image.sprite = enQuitImgBtn;
+        changeLang("en");
     }
     public void CnLang()
     {
         LanguageScript.SetLanguage("cn");
         languagePanel.SetActive(false);
-        viewCatImgUI.image.sprite = cnViewCatImgBtn;
-        quizImgUI.image.sprite = cnQuizImgBtn;
-        quitImgUI.image.sprite = cnQuitImgBtn;
+        changeLang("cn");
     }
     public void MelayuLang()
     {
         LanguageScript.SetLanguage("malay");
         languagePanel.SetActive(false);
-        viewCatImgUI.image.sprite = malayViewCatImgBtn;
-        quizImgUI.image.sprite = malayQuizImgBtn;
-        quitImgUI.image.sprite = malayQuitImgBtn;
+        changeLang("malay");
     }
     public void chooseLang()
     {
         languagePanel.SetActive(true);
+    }
+
+    public void changeLang(string lang) 
+    {
+        switch (lang)
+        {
+            case "en":
+                viewCatImgUI.image.sprite = enViewCatImgBtn;
+                quizImgUI.image.sprite = enQuizImgBtn;
+                quitImgUI.image.sprite = enQuitImgBtn;
+                break;
+            case "cn":
+                viewCatImgUI.image.sprite = cnViewCatImgBtn;
+                quizImgUI.image.sprite = cnQuizImgBtn;
+                quitImgUI.image.sprite = cnQuitImgBtn;
+                break;
+            case "malay":
+                viewCatImgUI.image.sprite = malayViewCatImgBtn;
+                quizImgUI.image.sprite = malayQuizImgBtn;
+                quitImgUI.image.sprite = malayQuitImgBtn;
+                break;
+        }
     }
 }
