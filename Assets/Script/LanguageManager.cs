@@ -42,7 +42,7 @@ public class LanguageManager : MonoBehaviour
         LanguageScript.SetLanguage("malay");
         languagePanel.SetActive(false);
         viewCatImgUI.image.sprite = malayViewCatImgBtn;
-        viewCatImgUI.image.sprite = malayQuizImgBtn;
+        quizImgUI.image.sprite = malayQuizImgBtn;
         quitImgUI.image.sprite = malayQuitImgBtn;
     }
     public void chooseLang()
