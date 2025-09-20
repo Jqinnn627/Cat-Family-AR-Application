@@ -3,7 +3,11 @@
     "m_SelectedPackage": {
         "deviceId": "R58MA4G17GA",
         "name": "com.unity.template.cat_family_ar_application",
+<<<<<<< Updated upstream
         "processId": 12649,
+=======
+        "processId": 24729,
+>>>>>>> Stashed changes
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -793,6 +797,63 @@
             "name": "com.unity.template.cat_family_ar_application",
             "processId": 19768,
             "exited": false
+<<<<<<< Updated upstream
+=======
+        },
+        {
+            "deviceId": "AKJBVB3113001317",
+            "name": "com.unity.template.cat_family_ar_application",
+            "processId": 31153,
+            "exited": false
+        },
+        {
+            "deviceId": "AKJBVB3113001317",
+            "name": "com.unity.template.cat_family_ar_application",
+            "processId": 7228,
+            "exited": false
+        },
+        {
+            "deviceId": "AKJBVB3113001317",
+            "name": "com.unity.template.cat_family_ar_application",
+            "processId": 9391,
+            "exited": false
+        },
+        {
+            "deviceId": "AKJBVB3113001317",
+            "name": "com.unity.template.cat_family_ar_application",
+            "processId": 10439,
+            "exited": false
+        },
+        {
+            "deviceId": "AKJBVB3113001317",
+            "name": "com.unity.template.cat_family_ar_application",
+            "processId": 16427,
+            "exited": false
+        },
+        {
+            "deviceId": "AKJBVB3113001317",
+            "name": "com.unity.template.cat_family_ar_application",
+            "processId": 13046,
+            "exited": false
+        },
+        {
+            "deviceId": "AKJBVB3113001317",
+            "name": "com.unity.template.cat_family_ar_application",
+            "processId": 15375,
+            "exited": false
+        },
+        {
+            "deviceId": "AKJBVB3113001317",
+            "name": "com.unity.template.cat_family_ar_application",
+            "processId": 23312,
+            "exited": false
+        },
+        {
+            "deviceId": "AKJBVB3113001317",
+            "name": "com.unity.template.cat_family_ar_application",
+            "processId": 24729,
+            "exited": false
+>>>>>>> Stashed changes
         }
     ],
     "m_Tags": {
