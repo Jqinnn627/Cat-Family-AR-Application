@@ -11,6 +11,11 @@ scopes = {
 	"last_search.0E0DE4CF" = "Quiz"
 	"OpenInspectorPreview.0E0DE4CF" = "0"
 	"currentGroup.0E0DE4CF" = "all"
+	"picker_window_position_offset.D845A788" = "8.800049;232.8;320;550.4"
+	"picker_search_text.D845A788" = ""
+	"last_search.D845A788" = ""
+	"OpenInspectorPreview.D845A788" = "0"
+	"currentGroup.D845A788" = "all"
 }
 providers = {
 	performance = {
