@@ -12,7 +12,7 @@ public class MainMenu : MonoBehaviour
 
     public void PlayQuiz()
     {
-        SceneManager.LoadSceneAsync(0); // Quiz Scene, not yet
+        SceneManager.LoadSceneAsync("QuizModule"); // Quiz Scene, not yet
     }
 
     public void Quit()
