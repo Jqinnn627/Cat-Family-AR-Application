@@ -117,3 +117,13 @@ MonoBehaviour:
     m_SpecifySize: 1
     m_Name: jaguarMarker
     m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4814297733700278971
+      m_GuidHigh: 10992413656026887088
+    m_SerializedTextureGuid:
+      m_GuidLow: 16705210436446869670
+      m_GuidHigh: 2214915673468305416
+    m_Size: {x: 0.023391813, y: 0.02}
+    m_SpecifySize: 1
+    m_Name: fakeMarker
+    m_Texture: {fileID: 0}

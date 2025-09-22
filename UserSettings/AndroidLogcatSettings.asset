@@ -1,9 +1,9 @@
 {
-    "m_SelectedDeviceId": "AKJBVB3113001317",
+    "m_SelectedDeviceId": "R5CR82VMYTZ",
     "m_SelectedPackage": {
-        "deviceId": "AKJBVB3113001317",
+        "deviceId": "R5CR82VMYTZ",
         "name": "com.unity.template.cat_family_ar_application",
-        "processId": 2439,
+        "processId": 22090,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -876,6 +876,42 @@
             "deviceId": "AKJBVB3113001317",
             "name": "com.unity.template.cat_family_ar_application",
             "processId": 2439,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR82VMYTZ",
+            "name": "com.sec.android.app.launcher",
+            "processId": 3335,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR82VMYTZ",
+            "name": "com.unity.template.cat_family_ar_application",
+            "processId": 13123,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR82VMYTZ",
+            "name": "com.unity.template.cat_family_ar_application",
+            "processId": 17111,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR82VMYTZ",
+            "name": "com.unity.template.cat_family_ar_application",
+            "processId": 18673,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR82VMYTZ",
+            "name": "com.unity.template.cat_family_ar_application",
+            "processId": 20984,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR82VMYTZ",
+            "name": "com.unity.template.cat_family_ar_application",
+            "processId": 22090,
             "exited": false
         }
     ],
