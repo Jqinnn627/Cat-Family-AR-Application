@@ -73,7 +73,7 @@ public class ARTrack : MonoBehaviour
             // Only show error if we don't have tracking AND no spawned cat
             if (Time.time - lastValidDetectionTime > scanTimeout && !isErrorVisible)
             {
-                ShowError("NO Marker Detected!!");
+                ShowError("No Marker Detected!!");
             }
         }
     }

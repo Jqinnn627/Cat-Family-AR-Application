@@ -1786,6 +1786,8 @@ MonoBehaviour:
   infoImageUI: {fileID: 1351111754}
   source: {fileID: 565986690}
   scanner: {fileID: 1187595357}
+  errorPanel: {fileID: 669853004}
+  errorMessage: {fileID: 207172036}
 --- !u!114 &569360421
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3144,8 +3146,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   imageManager: {fileID: 0}
   catPrefab: {fileID: 0}
-  errorPanel: {fileID: 669853004}
-  errorMessage: {fileID: 207172036}
+  errorPanel: {fileID: 0}
+  errorMessage: {fileID: 0}
 --- !u!1 &1874627915
 GameObject:
   m_ObjectHideFlags: 0

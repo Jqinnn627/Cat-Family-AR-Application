@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
@@ -44,12 +44,36 @@ public class MultipleMarker : MonoBehaviour
     public Image infoImageUI;
     public AudioSource source;
     public Image scanner;
+    public GameObject errorPanel;
+    public TextMeshProUGUI errorMessage;
+
+    private Camera arCamera;
+
+    private float lastValidDetectionTime;
+    private float scanTimeout = 5f;   // wait 5s before showing error
+    private bool isErrorVisible = false;
+    private bool isMarkerDetect = false;
 
     private GameObject currCat = null;
     private string currMarker = "";
     private bool canSpawn = true;
     private AudioClip currSound;
 
+    void Start()
+    {
+        lastValidDetectionTime = Time.time;
+    }
+    void Awake()
+    {
+        arCamera = Camera.main ?? FindObjectOfType<Camera>();
+    }
+    void Update()
+    {        
+        if (Time.time - lastValidDetectionTime > scanTimeout && !isMarkerDetect)
+        {
+            ShowError("No Marker Detected!!");
+        }
+    }
     void OnEnable()
     {
         imageManager.trackedImagesChanged += OnTrackedImageChanged;
@@ -123,6 +147,8 @@ public class MultipleMarker : MonoBehaviour
                     infoImageUI.sprite = cat.infoImage;
                     currSound = cat.sound;
                 }
+                HideError();
+                isMarkerDetect = true;
 
                 break;
             }
@@ -168,6 +194,23 @@ public class MultipleMarker : MonoBehaviour
         source.Stop();
         currSound = null;
         scanner.enabled = true;
+        isMarkerDetect = false;
+        lastValidDetectionTime = Time.time;
         Debug.Log("ClearObject called");
+    }
+    void ShowError(string message)
+    {
+        if (errorPanel != null) errorPanel.SetActive(true);
+        if (errorMessage != null) errorMessage.text = message;
+        isErrorVisible = true;
+
+        Debug.Log("⚠️ Error shown: " + message);
+    }
+
+    void HideError()
+    {
+        errorPanel.SetActive(false);
+        isErrorVisible = false;
+        Debug.Log("✅ Error hidden.");
     }
 }
