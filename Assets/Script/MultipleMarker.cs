@@ -19,8 +19,14 @@ public class MultipleMarker : MonoBehaviour
         public string nameEn;
         public string nameCn;
         public string nameMalay;
+
+        [TextArea(3, 10)]
         public string descriptionEn;
+
+        [TextArea(3, 10)]
         public string descriptionCn;
+
+        [TextArea(3, 10)]
         public string descriptionMalay;
         public Sprite infoImage;
         public AudioClip sound;

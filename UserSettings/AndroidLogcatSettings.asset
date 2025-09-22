@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "AKJBVB3113001317",
         "name": "com.unity.template.cat_family_ar_application",
-        "processId": 23454,
+        "processId": 2439,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -828,6 +828,54 @@
             "deviceId": "AKJBVB3113001317",
             "name": "com.unity.template.cat_family_ar_application",
             "processId": 23454,
+            "exited": false
+        },
+        {
+            "deviceId": "AKJBVB3113001317",
+            "name": "com.unity.template.cat_family_ar_application",
+            "processId": 1841,
+            "exited": false
+        },
+        {
+            "deviceId": "AKJBVB3113001317",
+            "name": "com.unity.template.cat_family_ar_application",
+            "processId": 6317,
+            "exited": false
+        },
+        {
+            "deviceId": "AKJBVB3113001317",
+            "name": "com.unity.template.cat_family_ar_application",
+            "processId": 9839,
+            "exited": false
+        },
+        {
+            "deviceId": "AKJBVB3113001317",
+            "name": "com.unity.template.cat_family_ar_application",
+            "processId": 11876,
+            "exited": false
+        },
+        {
+            "deviceId": "AKJBVB3113001317",
+            "name": "com.unity.template.cat_family_ar_application",
+            "processId": 13768,
+            "exited": false
+        },
+        {
+            "deviceId": "AKJBVB3113001317",
+            "name": "com.unity.template.cat_family_ar_application",
+            "processId": 15467,
+            "exited": false
+        },
+        {
+            "deviceId": "AKJBVB3113001317",
+            "name": "com.unity.template.cat_family_ar_application",
+            "processId": 21701,
+            "exited": false
+        },
+        {
+            "deviceId": "AKJBVB3113001317",
+            "name": "com.unity.template.cat_family_ar_application",
+            "processId": 2439,
             "exited": false
         }
     ],

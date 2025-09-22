@@ -826,8 +826,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -350, y: -100}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -130, y: -180}
+  m_SizeDelta: {x: 500, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &255586819
 MonoBehaviour:
@@ -859,7 +859,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -876,17 +876,17 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 45
+  m_fontSizeBase: 45
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
-  m_characterSpacing: 0
+  m_characterSpacing: -0.5
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -1002,6 +1002,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1874627916}
   - {fileID: 1932702623}
   - {fileID: 1351111753}
   - {fileID: 255586818}
@@ -1027,7 +1028,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.5882353}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.5882353}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1506,100 +1507,139 @@ MonoBehaviour:
     nameEn: Domestic Cat
     nameCn: "\u5BB6\u732B"
     nameMalay: Kucing Domestik
-    descriptionEn: Domestic Cat
-    descriptionCn: "\u5BB6\u732B"
-    descriptionMalay: Kucing Domestik
-    infoImage: {fileID: 21300000, guid: d581cf88e54023843bf8a569cecb6639, type: 3}
+    descriptionEn: "Sub Family: Felinae \nHabitat: Human settlements, homes \nSize:
+      23\u201325 cm tall, 3\u20135 kg \nDietary habits: Carnivore "
+    descriptionCn: "\u4E9A\u79D1: \u732B\u4E9A\u79D1\r\n\u6816\u606F\u5730: \u4EBA\u7C7B\u5C45\u6240\u3001\u4F4F\u5B85\r\n\u4F53\u578B:
+      \u9AD823\u201325\u5398\u7C73\uFF0C\u91CD3\u20135\u516C\u65A4\r\n\u98DF\u6027:
+      \u98DF\u8089\u52A8\u7269\r\r"
+    descriptionMalay: "Sub Famili: Felinae\r\nHabitat: Kawasan kediaman, rumah\r\nSaiz:
+      Tinggi 23\u201325 cm, 3\u20135 kg\r\nTabiat pemakanan: Karnivor\r\r"
+    infoImage: {fileID: 21300000, guid: 98049cf850bcab745bf02ff29a876c01, type: 3}
     sound: {fileID: 8300000, guid: 1ee1a9a487b2f4242b55696cd3f5664d, type: 3}
   - markerName: lionMarker
     prefab: {fileID: 6771847400169325059, guid: efdc9e21229673946879c65c6c103897, type: 3}
     nameEn: Lion
     nameCn: "\u72EE\u5B50"
-    nameMalay: singa
-    descriptionEn: Lion
-    descriptionCn: "\u72EE\u5B50"
-    descriptionMalay: singa
-    infoImage: {fileID: 21300000, guid: f4a7160326c0d004e8876d4da1c3229d, type: 3}
+    nameMalay: Singa
+    descriptionEn: "Sub Family: Pantherinae\r\nHabitat: Grasslands, savannas\r\nSize:
+      1.2 m tall, 150\u2013250 kg\r\nDietary habits: Carnivore\r\r"
+    descriptionCn: "\u4E9A\u79D1: \u8C79\u4E9A\u79D1\r\n\u6816\u606F\u5730: \u8349\u539F\u3001\u7A00\u6811\u8349\u539F\r\n\u4F53\u578B:
+      \u96C4\u72EE\u9AD81.2\u7C73\uFF0C\u91CD150\u2013250\u516C\u65A4\n\r\u98DF\u6027:
+      \u98DF\u8089\u52A8\u7269\uFF08\u5927\u578B\u98DF\u8349\u52A8\u7269\uFF09"
+    descriptionMalay: "Sub Famili: Pantherinae\r\nHabitat: Padang rumput, savana\r\nSaiz:
+      Tinggi 1.2 m, 150\u2013250 kg\r\nTabiat pemakanan: Karnivor"
+    infoImage: {fileID: 21300000, guid: 9310fe4ab58389449bca3b503da9df34, type: 3}
     sound: {fileID: 8300000, guid: 1e874e37e54d5fd4fb8e5c2ed8e42029, type: 3}
   - markerName: lynxMarker
     prefab: {fileID: 1033698239983373779, guid: df974054c68736247ba0b6f1105f04cb, type: 3}
     nameEn: Lynx
     nameCn: "\u5C71\u732B"
-    nameMalay: kucing hutan
-    descriptionEn: Lynx
-    descriptionCn: "\u5C71\u732B"
-    descriptionMalay: kucing hutan
-    infoImage: {fileID: 21300000, guid: 5f0f1e114deb99748853d462e0655ca4, type: 3}
+    nameMalay: Kucing Hutan
+    descriptionEn: "Sub Family: Felinae\r\nHabitat: Forests, mountains\r\nSize: 50\u201370
+      cm tall, 8\u201321 kg\r\nDietary habits: Carnivore"
+    descriptionCn: "\u4E9A\u79D1: \u732B\u4E9A\u79D1\r\n\u6816\u606F\u5730: \u68EE\u6797\u3001\u5C71\u533A\r\n\u4F53\u578B:
+      \u9AD850\u201370\u5398\u7C73\uFF0C\u91CD8\u201321\u516C\u65A4\r\n\u98DF\u6027:
+      \u98DF\u8089\u52A8\u7269"
+    descriptionMalay: "Sub Famili: Felinae\r\nHabitat: Hutan, kawasan gunung\r\nSaiz:
+      Tinggi 50\u201370 cm, 8\u201321 kg\r\nTabiat pemakanan: Karnivor "
+    infoImage: {fileID: 21300000, guid: c4192976bb4c36d47ad63140d68f33e7, type: 3}
     sound: {fileID: 8300000, guid: d685d731a1acc8a45b07375a768c2bf0, type: 3}
   - markerName: floppaMarker
     prefab: {fileID: 6911189894652632505, guid: 83f3567d0c401cc4fa397a963a75fd5b, type: 3}
     nameEn: Floppa
     nameCn: "\u72DE\u732B"
-    nameMalay: karakal
-    descriptionEn: Floppa
-    descriptionCn: "\u72DE\u732B"
-    descriptionMalay: karakal
-    infoImage: {fileID: 21300000, guid: 5d6e7e1184258dd41a03a4cd2c89f5fa, type: 3}
+    nameMalay: Karakal
+    descriptionEn: "Sub Family: Felinae\r\nHabitat: Savannas, deserts\r\nSize: 40\u201350
+      cm tall, 8\u201319 kg\r\nDietary habits: Carnivore"
+    descriptionCn: "\u4E9A\u79D1: \u732B\u4E9A\u79D1\r\n\u6816\u606F\u5730: \u7A00\u6811\u8349\u539F\u3001\u6C99\u6F20\r\n\u4F53\u578B:
+      \u9AD840\u201350\u5398\u7C73\uFF0C\u91CD8\u201319\u516C\u65A4\r\n\u98DF\u6027:
+      \u98DF\u8089\u52A8\u7269"
+    descriptionMalay: "Sub Famili: Felinae\r\nHabitat: Savana, gurun\r\nSaiz: Tinggi
+      40\u201350 cm, 8\u201319 kg\r\nTabiat pemakanan: Karnivor"
+    infoImage: {fileID: 21300000, guid: 16034c79e16262f4eadb9d586d37701b, type: 3}
     sound: {fileID: 8300000, guid: 25efd53e6a2547b4c8b36df496702a95, type: 3}
   - markerName: cheetahMarker
     prefab: {fileID: 6303875182085146032, guid: 2ea8d5e393207c148a94e367871d347f, type: 3}
     nameEn: Cheetah
     nameCn: "\u730E\u8C79"
-    nameMalay: cheetah
-    descriptionEn: Cheetah
-    descriptionCn: "\u730E\u8C79"
-    descriptionMalay: cheetah
-    infoImage: {fileID: 21300000, guid: 67ac1a5ca7a011e47aec4d1959256a32, type: 3}
+    nameMalay: Cheetah
+    descriptionEn: "Sub Family: Felinae\r\nHabitat: Open plains, grasslands\r\nSize:
+      70\u201390 cm tall, 21\u201372 kg\r\nDietary habits: Carnivore"
+    descriptionCn: "\u4E9A\u79D1: \u732B\u4E9A\u79D1\r\n\u6816\u606F\u5730: \u5E73\u539F\u3001\u8349\u539F\r\n\u4F53\u578B:
+      \u9AD870\u201390\u5398\u7C73\uFF0C\u91CD21\u201372\u516C\u65A4\r\n\u98DF\u6027:
+      \u98DF\u8089\u52A8\u7269"
+    descriptionMalay: "Sub Famili: Felinae\r\nHabitat: Padang rumput terbuka\r\nSaiz:
+      Tinggi 70\u201390 cm, 21\u201372 kg\r\nTabiat pemakanan: Karnivor"
+    infoImage: {fileID: 21300000, guid: ab64a7821b1a29b4bb80dbf13af70de4, type: 3}
     sound: {fileID: 8300000, guid: 1a2ea3f1265b5d4408a039a3c8c3c3a6, type: 3}
   - markerName: whiteTigerMarker
     prefab: {fileID: 297442490583929622, guid: 0ef6548e938dfe44f9de45fce58ae0a8, type: 3}
     nameEn: White  Tiger
     nameCn: "\u767D\u8001\u864E"
-    nameMalay: harimau putih
-    descriptionEn: White  Tiger
-    descriptionCn: "\u767D\u8001\u864E"
-    descriptionMalay: harimau putih
-    infoImage: {fileID: 21300000, guid: 67e12bbedec7e03419dd6000a374a800, type: 3}
+    nameMalay: Harimau Putih
+    descriptionEn: "Sub Family: Pantherinae\r\nHabitat: Forests, grasslands\r\nSize:
+      90\u2013110 cm tall, 200\u2013300 kg\r\nDietary habits: Carnivore"
+    descriptionCn: "\u4E9A\u79D1: \u8C79\u4E9A\u79D1\r\n\u6816\u606F\u5730: \u68EE\u6797\u3001\u8349\u539F\r\n\u4F53\u578B:
+      \u9AD890\u2013110\u5398\u7C73\uFF0C\u91CD200\u2013300\u516C\u65A4\r\n\u98DF\u6027:
+      \u98DF\u8089\u52A8\u7269"
+    descriptionMalay: "Sub Famili: Pantherinae\r\nHabitat: Hutan, padang rumput\r\nSaiz:
+      Tinggi 90\u2013110 cm, 200\u2013300 kg\r\nTabiat pemakanan: Karnivor"
+    infoImage: {fileID: 21300000, guid: e754b0a605ede904299d863b645c79ce, type: 3}
     sound: {fileID: 8300000, guid: 0a3c9180b28cf304aa4043ee457dc758, type: 3}
   - markerName: blackPantherMarker
     prefab: {fileID: 4729049370243471200, guid: 70959e08c89b97d4e8686872f2920a0a, type: 3}
     nameEn: Black Panther
     nameCn: "\u9ED1\u8C79"
-    nameMalay: harimau kumbang hitam
-    descriptionEn: Black Panther
-    descriptionCn: "\u9ED1\u8C79"
-    descriptionMalay: harimau kumbang hitam
-    infoImage: {fileID: 21300000, guid: 2cda4632e9457f24cb73d03f60533db9, type: 3}
+    nameMalay: Harimau Kumbang Hitam
+    descriptionEn: "Sub Family: Pantherinae\r\nHabitat: Forests, jungles\r\nSize:
+      60\u201390 cm tall, 30\u2013100 kg\r\nDietary habits: Carnivore"
+    descriptionCn: "\u4E9A\u79D1: \u8C79\u4E9A\u79D1\r\n\u6816\u606F\u5730: \u68EE\u6797\u3001\u4E1B\u6797\r\n\u4F53\u578B:
+      \u9AD860\u201390\u5398\u7C73\uFF0C\u91CD30\u2013100\u516C\u65A4\r\n\u98DF\u6027:
+      \u98DF\u8089\u52A8\u7269"
+    descriptionMalay: "Sub Famili: Pantherinae\r\nHabitat: Hutan, rimba\r\nSaiz:
+      Tinggi 60\u201390 cm, 30\u2013100 kg\r\nTabiat pemakanan: Karnivor"
+    infoImage: {fileID: 21300000, guid: d2a9d4e2e6f27384492dfddeea6d0f13, type: 3}
     sound: {fileID: 8300000, guid: bc86b7a10b00d3844a144668b7511d07, type: 3}
   - markerName: jaguarMarker
     prefab: {fileID: 7321659756410208922, guid: abfd2470039e51f438d76757d9fc2c6e, type: 3}
     nameEn: Jaguar
     nameCn: "\u6377\u8C79"
     nameMalay: Jaguar
-    descriptionEn: Jaguar
-    descriptionCn: "\u6377\u8C79"
-    descriptionMalay: Jaguar
-    infoImage: {fileID: 21300000, guid: 37ade4628ae61be45b1cfe5d95bcd6b1, type: 3}
+    descriptionEn: "Sub Family: Pantherinae\r\nHabitat: Rainforests, wetlands\r\nSize:
+      63\u201376 cm tall, 56\u201396 kg\r\nDietary habits: Carnivore"
+    descriptionCn: "\u4E9A\u79D1: \u8C79\u4E9A\u79D1\r\n\u6816\u606F\u5730: \u96E8\u6797\u3001\u6E7F\u5730\r\n\u4F53\u578B:
+      \u9AD863\u201376\u5398\u7C73\uFF0C\u91CD56\u201396\u516C\u65A4\r\n\u98DF\u6027:
+      \u98DF\u8089\u52A8\u7269"
+    descriptionMalay: "Sub Famili: Pantherinae\r\nHabitat: Hutan hujan, tanah lembap\r\nSaiz:
+      Tinggi 63\u201376 cm, 56\u201396 kg\r\nTabiat pemakanan: Karnivor"
+    infoImage: {fileID: 21300000, guid: 82ed2d815f737374cb14e7e764509e72, type: 3}
     sound: {fileID: 8300000, guid: 57f909a4e987b1143b8b45e831517355, type: 3}
   - markerName: pumaMarker
     prefab: {fileID: 1859647453254245870, guid: 7a196d02d791cac468f65b8569df7d08, type: 3}
     nameEn: Puma
     nameCn: "\u7F8E\u6D32\u72EE"
-    nameMalay: cougar
-    descriptionEn: Puma
-    descriptionCn: "\u7F8E\u6D32\u72EE"
-    descriptionMalay: cougar
-    infoImage: {fileID: 21300000, guid: 43e6a4f2c73478349807411a882cb9a1, type: 3}
+    nameMalay: Cougar
+    descriptionEn: "Sub Family: Felinae\r\nHabitat: Mountains, forests\r\nSize: 60\u201390
+      cm tall, 29\u201390 kg\r\nDietary habits: Carnivore"
+    descriptionCn: "\u4E9A\u79D1: \u732B\u4E9A\u79D1\r\n\u6816\u606F\u5730: \u5C71\u533A\u3001\u68EE\u6797\r\n\u4F53\u578B:
+      \u9AD860\u201390\u5398\u7C73\uFF0C\u91CD29\u201390\u516C\u65A4\r\n\u98DF\u6027:
+      \u98DF\u8089\u52A8\u7269"
+    descriptionMalay: "Sub Famili: Felinae\r\nHabitat: Kawasan gunung, hutan\r\nSaiz:
+      Tinggi 60\u201390 cm, 29\u201390 kg\r\nTabiat pemakanan: Karnivor"
+    infoImage: {fileID: 21300000, guid: 40ce22d51232e5e4cbff8fd60eddbe15, type: 3}
     sound: {fileID: 8300000, guid: 1b4429dddc5fd2c48a1071aa9b2b7abd, type: 3}
   - markerName: LionessMarker
     prefab: {fileID: 1885803598269831721, guid: 434a67343e08aca43a1a1ab67c217438, type: 3}
     nameEn: Lioness
     nameCn: "\u6BCD\u72EE"
-    nameMalay: singa betina
-    descriptionEn: Lioness
-    descriptionCn: "\u6BCD\u72EE"
-    descriptionMalay: singa betina
-    infoImage: {fileID: 21300000, guid: 18ab0266a2c80af4bb39bfeb0ca213c9, type: 3}
+    nameMalay: Singa Betina
+    descriptionEn: "Sub Family: Pantherinae\r\nHabitat: Grasslands, savannas\r\nSize:
+      1.1 m tall, 120\u2013182 kg\r\nDietary habits: Carnivore"
+    descriptionCn: "\u4E9A\u79D1: \u8C79\u4E9A\u79D1\r\n\u6816\u606F\u5730: \u8349\u539F\u3001\u7A00\u6811\u8349\u539F\r\n\u4F53\u578B:
+      \u9AD81.1\u7C73\uFF0C\u91CD120\u2013182\u516C\u65A4\r\n\u98DF\u6027: \u98DF\u8089\u52A8\u7269"
+    descriptionMalay: "Sub Famili: Pantherinae\r\nHabitat: Padang rumput, savana\r\nSaiz:
+      Tinggi 1.1 m, 120\u2013182 kg\r\nTabiat pemakanan: Karnivor"
+    infoImage: {fileID: 21300000, guid: ae2c32e860929c84ea7ddecf47e1d780, type: 3}
     sound: {fileID: 8300000, guid: 1e874e37e54d5fd4fb8e5c2ed8e42029, type: 3}
   MainPanel: {fileID: 2080057812}
   displayInfoButton: {fileID: 1702993806}
@@ -2021,8 +2061,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 400, y: 770}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 360, y: 640}
+  m_SizeDelta: {x: 90, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1103550890
 MonoBehaviour:
@@ -2367,10 +2407,10 @@ RectTransform:
   m_Father: {fileID: 542928002}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -510}
-  m_SizeDelta: {x: 950, y: 600}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 350}
+  m_SizeDelta: {x: 800, y: 450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1351111754
 MonoBehaviour:
@@ -2891,6 +2931,82 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   imageManager: {fileID: 0}
   catPrefab: {fileID: 0}
+--- !u!1 &1874627915
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1874627916}
+  - component: {fileID: 1874627918}
+  - component: {fileID: 1874627917}
+  m_Layer: 5
+  m_Name: InfoBox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1874627916
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1874627915}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 542928002}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1080, y: 1920}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1874627917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1874627915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: c6d4a5d4ac16ba047ab7655b35eca4f8, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1874627918
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1874627915}
+  m_CullTransparentMesh: 1
 --- !u!1 &1886054015
 GameObject:
   m_ObjectHideFlags: 0
@@ -3195,8 +3311,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -350, y: 10}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -130, y: 50}
+  m_SizeDelta: {x: 500, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1932702624
 MonoBehaviour:
@@ -3228,7 +3344,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 0.14150941, g: 0.14150941, b: 0.14150941, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3251,13 +3367,13 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 5
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
-  m_characterSpacing: 0
+  m_characterSpacing: -0.5
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 1.5
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
