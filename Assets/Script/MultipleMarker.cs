@@ -47,31 +47,46 @@ public class MultipleMarker : MonoBehaviour
     public GameObject errorPanel;
     public TextMeshProUGUI errorMessage;
 
-    private Camera arCamera;
+    //private Camera arCamera;
 
     private float lastValidDetectionTime;
     private float scanTimeout = 5f;   // wait 5s before showing error
-    private bool isErrorVisible = false;
     private bool isMarkerDetect = false;
 
     private GameObject currCat = null;
     private string currMarker = "";
     private bool canSpawn = true;
     private AudioClip currSound;
+    public string errMsg;
 
     void Start()
     {
         lastValidDetectionTime = Time.time;
     }
-    void Awake()
-    {
-        arCamera = Camera.main ?? FindObjectOfType<Camera>();
-    }
+    //void Awake()
+    //{
+    //    arCamera = Camera.main ?? FindObjectOfType<Camera>();
+    //}
     void Update()
     {        
         if (Time.time - lastValidDetectionTime > scanTimeout && !isMarkerDetect)
         {
-            ShowError("No Marker Detected!!");
+            switch (LanguageScript.CurrentLang) 
+            {
+                case "en":
+                    errMsg = "No Marker Detected.";
+                    ShowError(errMsg);
+                    break;
+                case "cn":
+                    errMsg = "未检测到标记。";
+                    ShowError(errMsg);
+                    break;
+                case "malay":
+                    errMsg = "Tiada Marker Dikesan.";
+                    ShowError(errMsg);
+                    break;
+            }
+            
         }
     }
     void OnEnable()
@@ -202,7 +217,6 @@ public class MultipleMarker : MonoBehaviour
     {
         if (errorPanel != null) errorPanel.SetActive(true);
         if (errorMessage != null) errorMessage.text = message;
-        isErrorVisible = true;
 
         Debug.Log("⚠️ Error shown: " + message);
     }
@@ -210,7 +224,6 @@ public class MultipleMarker : MonoBehaviour
     void HideError()
     {
         errorPanel.SetActive(false);
-        isErrorVisible = false;
         Debug.Log("✅ Error hidden.");
     }
 }
