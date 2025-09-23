@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
@@ -19,8 +19,14 @@ public class MultipleMarker : MonoBehaviour
         public string nameEn;
         public string nameCn;
         public string nameMalay;
+
+        [TextArea(3, 10)]
         public string descriptionEn;
+
+        [TextArea(3, 10)]
         public string descriptionCn;
+
+        [TextArea(3, 10)]
         public string descriptionMalay;
         public Sprite infoImage;
         public AudioClip sound;
@@ -38,12 +44,51 @@ public class MultipleMarker : MonoBehaviour
     public Image infoImageUI;
     public AudioSource source;
     public Image scanner;
+    public GameObject errorPanel;
+    public TextMeshProUGUI errorMessage;
+
+    //private Camera arCamera;
+
+    private float lastValidDetectionTime;
+    private float scanTimeout = 5f;   // wait 5s before showing error
+    private bool isMarkerDetect = false;
 
     private GameObject currCat = null;
     private string currMarker = "";
     private bool canSpawn = true;
     private AudioClip currSound;
+    public string errMsg;
 
+    void Start()
+    {
+        lastValidDetectionTime = Time.time;
+    }
+    //void Awake()
+    //{
+    //    arCamera = Camera.main ?? FindObjectOfType<Camera>();
+    //}
+    void Update()
+    {        
+        if (Time.time - lastValidDetectionTime > scanTimeout && !isMarkerDetect)
+        {
+            switch (LanguageScript.CurrentLang) 
+            {
+                case "en":
+                    errMsg = "No Marker Detected.";
+                    ShowError(errMsg);
+                    break;
+                case "cn":
+                    errMsg = "未检测到标记。";
+                    ShowError(errMsg);
+                    break;
+                case "malay":
+                    errMsg = "Tiada Marker Dikesan.";
+                    ShowError(errMsg);
+                    break;
+            }
+            
+        }
+    }
     void OnEnable()
     {
         imageManager.trackedImagesChanged += OnTrackedImageChanged;
@@ -117,6 +162,8 @@ public class MultipleMarker : MonoBehaviour
                     infoImageUI.sprite = cat.infoImage;
                     currSound = cat.sound;
                 }
+                HideError();
+                isMarkerDetect = true;
 
                 break;
             }
@@ -162,6 +209,21 @@ public class MultipleMarker : MonoBehaviour
         source.Stop();
         currSound = null;
         scanner.enabled = true;
+        isMarkerDetect = false;
+        lastValidDetectionTime = Time.time;
         Debug.Log("ClearObject called");
+    }
+    void ShowError(string message)
+    {
+        if (errorPanel != null) errorPanel.SetActive(true);
+        if (errorMessage != null) errorMessage.text = message;
+
+        Debug.Log("⚠️ Error shown: " + message);
+    }
+
+    void HideError()
+    {
+        errorPanel.SetActive(false);
+        Debug.Log("✅ Error hidden.");
     }
 }

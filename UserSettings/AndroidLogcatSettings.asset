@@ -3,11 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "R58MA4G17GA",
         "name": "com.unity.template.cat_family_ar_application",
-<<<<<<< Updated upstream
-        "processId": 12649,
-=======
-        "processId": 24729,
->>>>>>> Stashed changes
+        "processId": 28555,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -769,6 +765,42 @@
             "exited": false
         },
         {
+            "deviceId": "R58MA4G17GA",
+            "name": "com.unity.template.cat_family_ar_application",
+            "processId": 29631,
+            "exited": false
+        },
+        {
+            "deviceId": "R58MA4G17GA",
+            "name": "com.unity.template.cat_family_ar_application",
+            "processId": 32020,
+            "exited": false
+        },
+        {
+            "deviceId": "R58MA4G17GA",
+            "name": "com.unity.template.cat_family_ar_application",
+            "processId": 1415,
+            "exited": false
+        },
+        {
+            "deviceId": "R58MA4G17GA",
+            "name": "com.unity.template.cat_family_ar_application",
+            "processId": 4150,
+            "exited": false
+        },
+        {
+            "deviceId": "R58MA4G17GA",
+            "name": "com.unity.template.cat_family_ar_application",
+            "processId": 5498,
+            "exited": false
+        },
+        {
+            "deviceId": "R58MA4G17GA",
+            "name": "com.unity.template.cat_family_ar_application",
+            "processId": 28555,
+            "exited": false
+        },
+        {
             "deviceId": "AKJBVB3113001317",
             "name": "com.hihonor.android.launcher",
             "processId": 4072,
@@ -797,63 +829,126 @@
             "name": "com.unity.template.cat_family_ar_application",
             "processId": 19768,
             "exited": false
-<<<<<<< Updated upstream
-=======
         },
         {
             "deviceId": "AKJBVB3113001317",
             "name": "com.unity.template.cat_family_ar_application",
-            "processId": 31153,
+            "processId": 31487,
             "exited": false
         },
         {
             "deviceId": "AKJBVB3113001317",
             "name": "com.unity.template.cat_family_ar_application",
-            "processId": 7228,
+            "processId": 4192,
             "exited": false
         },
         {
             "deviceId": "AKJBVB3113001317",
             "name": "com.unity.template.cat_family_ar_application",
-            "processId": 9391,
+            "processId": 8320,
             "exited": false
         },
         {
             "deviceId": "AKJBVB3113001317",
             "name": "com.unity.template.cat_family_ar_application",
-            "processId": 10439,
+            "processId": 10246,
             "exited": false
         },
         {
             "deviceId": "AKJBVB3113001317",
             "name": "com.unity.template.cat_family_ar_application",
-            "processId": 16427,
+            "processId": 21948,
             "exited": false
         },
         {
             "deviceId": "AKJBVB3113001317",
             "name": "com.unity.template.cat_family_ar_application",
-            "processId": 13046,
+            "processId": 23454,
             "exited": false
         },
         {
             "deviceId": "AKJBVB3113001317",
             "name": "com.unity.template.cat_family_ar_application",
-            "processId": 15375,
+            "processId": 1841,
             "exited": false
         },
         {
             "deviceId": "AKJBVB3113001317",
             "name": "com.unity.template.cat_family_ar_application",
-            "processId": 23312,
+            "processId": 6317,
             "exited": false
         },
         {
             "deviceId": "AKJBVB3113001317",
             "name": "com.unity.template.cat_family_ar_application",
-            "processId": 24729,
+            "processId": 9839,
             "exited": false
->>>>>>> Stashed changes
+        },
+        {
+            "deviceId": "AKJBVB3113001317",
+            "name": "com.unity.template.cat_family_ar_application",
+            "processId": 11876,
+            "exited": false
+        },
+        {
+            "deviceId": "AKJBVB3113001317",
+            "name": "com.unity.template.cat_family_ar_application",
+            "processId": 13768,
+            "exited": false
+        },
+        {
+            "deviceId": "AKJBVB3113001317",
+            "name": "com.unity.template.cat_family_ar_application",
+            "processId": 15467,
+            "exited": false
+        },
+        {
+            "deviceId": "AKJBVB3113001317",
+            "name": "com.unity.template.cat_family_ar_application",
+            "processId": 21701,
+            "exited": false
+        },
+        {
+            "deviceId": "AKJBVB3113001317",
+            "name": "com.unity.template.cat_family_ar_application",
+            "processId": 2439,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR82VMYTZ",
+            "name": "com.sec.android.app.launcher",
+            "processId": 3335,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR82VMYTZ",
+            "name": "com.unity.template.cat_family_ar_application",
+            "processId": 13123,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR82VMYTZ",
+            "name": "com.unity.template.cat_family_ar_application",
+            "processId": 17111,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR82VMYTZ",
+            "name": "com.unity.template.cat_family_ar_application",
+            "processId": 18673,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR82VMYTZ",
+            "name": "com.unity.template.cat_family_ar_application",
+            "processId": 20984,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR82VMYTZ",
+            "name": "com.unity.template.cat_family_ar_application",
+            "processId": 22090,
+            "exited": false
         }
     ],
     "m_Tags": {
