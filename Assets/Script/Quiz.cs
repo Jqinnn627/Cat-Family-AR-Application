@@ -75,31 +75,31 @@ public class Quiz : MonoBehaviour
             // --- English Questions ---
             en = new QuizQnA[]
             {
-                new QuizQnA { question = "Domestic Cat loves \n Munchies cookies", answer = false },
+                new QuizQnA { question = "Domestic cats are suitable \n in houses.", answer = true },
                 new QuizQnA { question = "Leopard is a kind of lion", answer = false },
                 new QuizQnA { question = "Jaguar are both carnivore \n and herbivore", answer = false },
                 new QuizQnA { question = "Lioness is a type of Felinae", answer = false },
-                new QuizQnA { question = "Cheetah is a pantherinae.", answer = false },
+                new QuizQnA { question = "Floppa is a carnivore.", answer = true },
             },
 
             // --- Chinese Questions ---
             cn = new QuizQnA[]
             {
-                new QuizQnA { question = "家猫喜欢 \n Munchies 饼干", answer = false },
-                new QuizQnA { question = "Leopard is a kind of lion", answer = false },
-                new QuizQnA { question = "Jaguar are both carnivore \n and herbivore", answer = false },
-                new QuizQnA { question = "Lioness is a type of Felinae", answer = true },
-                new QuizQnA { question = "Cheetah is a pantherinae.", answer = false },
+                new QuizQnA { question = "家猫适合在屋内生活。", answer = true },
+                new QuizQnA { question = "豹子是狮子的一种", answer = false },
+                new QuizQnA { question = "美洲虎既是食肉动物，\n也是食草动物", answer = false },
+                new QuizQnA { question = "母狮是猫科动物的一种", answer = false },
+                new QuizQnA { question = "Floppa 是食肉动物", answer = true },
             },
 
             // --- Malay Questions ---
             malay = new QuizQnA[]
             {
-                new QuizQnA { question = "Kucing Parsi suka \n Munchies cookies", answer = false },
+                new QuizQnA { question = "Kucing domestik sesuai \n di dalam rumah.", answer = true },
                 new QuizQnA { question = "Harimau Bintang adalah \n sejenis singa", answer = false },
                 new QuizQnA { question = "Jaguar adalah \n karnivor dan herbivor", answer = false },
-                new QuizQnA { question = "Ocelot adalah sejenis Felinae", answer = true },
-                new QuizQnA { question = "Cheetah adalah pantherinae.", answer = false },
+                new QuizQnA { question = "Singa betina adalah \n sejenis Felinae", answer = false },
+                new QuizQnA { question = "Floppa ialah karnivor.", answer = true },
             }
         };
 
