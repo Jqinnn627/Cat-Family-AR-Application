@@ -1,4 +1,23 @@
-Library: C:\Users\User\Downloads\Cat-Family-AR-Application-main (1)\Cat-Family-AR-Application-main\Temp\BurstOutput\tempburstlibs\arm64-v8a\lib_burst_generated
+Library: C:\Users\denni\OneDrive\Documents\Cat-Family-AR-Application\Temp\BurstOutput\tempburstlibs\arm64-v8a\lib_burst_generated
+--platform=Android
+--backend=burst-llvm-14
+--target=ARMV8A_AARCH64
+--global-safety-checks-setting=Off
+--disable-safety-checks
+--meta-data-generation=False
+--dump=Function
+--float-precision=Standard
+--float-mode=Fast
+--generate-link-xml=Temp\burst.link.xml
+--temp-folder=C:\Users\denni\OneDrive\Documents\Cat-Family-AR-Application\Temp\Burst
+--key-folder=C:/Program Files/Unity/Hub/Editor/2022.3.1f1/Editor/Data/PlaybackEngines/AndroidPlayer
+--decode-folder=C:\Users\denni\OneDrive\Documents\Cat-Family-AR-Application\Library\Burst
+--output=C:\Users\denni\OneDrive\Documents\Cat-Family-AR-Application\Temp\BurstOutput\tempburstlibs\arm64-v8a\lib_burst_generated
+--pdb-search-paths=Temp/ManagedSymbols/
+
+--method=Unity.Jobs.IJobForExtensions+ForJobStruct`1[[UnityEngine.Rendering.Universal.ZBinningJob, Unity.RenderPipelines.Universal.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::Execute(UnityEngine.Rendering.Universal.ZBinningJob&, Unity.RenderPipelines.Universal.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Unity.Jobs.LowLevel.Unsafe.JobRanges&, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089)--77fc393cb521ac129b1392d4eb94d29a
+--method=Unity.Jobs.IJobForExtensions+ForJobStruct`1[[UnityEngine.Rendering.Universal.TileRangeExpansionJob, Unity.RenderPipelines.Universal.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::Execute(UnityEngine.Rendering.Universal.TileRangeExpansionJob&, Unity.RenderPipelines.Universal.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Unity.Jobs.LowLevel.Unsafe.JobRanges&, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089)--adceb2156d08d59afc9749dc2521fd2b
+--method=Unity.Jobs.IJobForExtensions+ForJobStruct`1[[UnityEngine.Rendering.Universal.TilingJob, Unity.RenderPipelines.Universal.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::Execute(UnityEngine.Rendering.Universal.TilingJob&, Unity.RenderPipelines.Universal.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Unity.Jobs.LowLevel.Unsafe.JobRanges&, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089)--a6f5259e22ed809ef3937424c4bd686d
 --platform=Android
 --backend=burst-llvm-14
 --target=ARMV8A_AARCH64
@@ -7,10 +26,10 @@ Library: C:\Users\User\Downloads\Cat-Family-AR-Application-main (1)\Cat-Family-A
 --dump=Function
 --float-precision=Standard
 --generate-link-xml=Temp\burst.link.xml
---temp-folder=C:\Users\User\Downloads\Cat-Family-AR-Application-main (1)\Cat-Family-AR-Application-main\Temp\Burst
+--temp-folder=C:\Users\denni\OneDrive\Documents\Cat-Family-AR-Application\Temp\Burst
 --key-folder=C:/Program Files/Unity/Hub/Editor/2022.3.1f1/Editor/Data/PlaybackEngines/AndroidPlayer
---decode-folder=C:\Users\User\Downloads\Cat-Family-AR-Application-main (1)\Cat-Family-AR-Application-main\Library\Burst
---output=C:\Users\User\Downloads\Cat-Family-AR-Application-main (1)\Cat-Family-AR-Application-main\Temp\BurstOutput\tempburstlibs\arm64-v8a\lib_burst_generated
+--decode-folder=C:\Users\denni\OneDrive\Documents\Cat-Family-AR-Application\Library\Burst
+--output=C:\Users\denni\OneDrive\Documents\Cat-Family-AR-Application\Temp\BurstOutput\tempburstlibs\arm64-v8a\lib_burst_generated
 --pdb-search-paths=Temp/ManagedSymbols/
 
 --method=UnityEngine.XR.Interaction.Toolkit.Utilities.BurstMathUtility, Unity.XR.Interaction.Toolkit, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::ProjectOnPlane(Unity.Mathematics.float3&, Unity.Mathematics, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null|Unity.Mathematics.float3&, Unity.Mathematics, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null|Unity.Mathematics.float3&, Unity.Mathematics, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)--1819bc9925667b008fd6c3e6019ccf71
@@ -90,23 +109,4 @@ Library: C:\Users\User\Downloads\Cat-Family-AR-Application-main (1)\Cat-Family-A
 --method=UnityEngine.XR.Interaction.Toolkit.Gaze.XRGazeAssistance, Unity.XR.Interaction.Toolkit, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::GetAssistedVelocityInternal(UnityEngine.Vector3&, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|UnityEngine.Vector3&, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|UnityEngine.Vector3&, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|UnityEngine.Vector3&, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null)--1e08dab93568e9f4a5078990b82d492b
 --method=UnityEngine.XR.Interaction.Toolkit.Transformers.XRSocketGrabTransformer, Unity.XR.Interaction.Toolkit, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::FastComputeNewTrackedPose(Unity.Mathematics.float3&, Unity.Mathematics, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null|Unity.Mathematics.quaternion&, Unity.Mathematics, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null|Unity.Mathematics.float3&, Unity.Mathematics, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null|Unity.Mathematics.quaternion&, Unity.Mathematics, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null|Unity.Mathematics.quaternion&, Unity.Mathematics, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null|Unity.Mathematics.float3&, Unity.Mathematics, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null|Unity.Mathematics.quaternion&, Unity.Mathematics, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)--d25cb729a424e7fa5ef9105d2c698524
 --method=UnityEngine.XR.Interaction.Toolkit.Utilities.BurstMathUtility, Unity.XR.Interaction.Toolkit, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::Orthogonal(Unity.Mathematics.float3&, Unity.Mathematics, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null|Unity.Mathematics.float3&, Unity.Mathematics, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)--129828f5f7843aff998314f0456a7420
---platform=Android
---backend=burst-llvm-14
---target=ARMV8A_AARCH64
---global-safety-checks-setting=Off
---disable-safety-checks
---meta-data-generation=False
---dump=Function
---float-precision=Standard
---float-mode=Fast
---generate-link-xml=Temp\burst.link.xml
---temp-folder=C:\Users\User\Downloads\Cat-Family-AR-Application-main (1)\Cat-Family-AR-Application-main\Temp\Burst
---key-folder=C:/Program Files/Unity/Hub/Editor/2022.3.1f1/Editor/Data/PlaybackEngines/AndroidPlayer
---decode-folder=C:\Users\User\Downloads\Cat-Family-AR-Application-main (1)\Cat-Family-AR-Application-main\Library\Burst
---output=C:\Users\User\Downloads\Cat-Family-AR-Application-main (1)\Cat-Family-AR-Application-main\Temp\BurstOutput\tempburstlibs\arm64-v8a\lib_burst_generated
---pdb-search-paths=Temp/ManagedSymbols/
-
---method=Unity.Jobs.IJobForExtensions+ForJobStruct`1[[UnityEngine.Rendering.Universal.ZBinningJob, Unity.RenderPipelines.Universal.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::Execute(UnityEngine.Rendering.Universal.ZBinningJob&, Unity.RenderPipelines.Universal.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Unity.Jobs.LowLevel.Unsafe.JobRanges&, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089)--77fc393cb521ac129b1392d4eb94d29a
---method=Unity.Jobs.IJobForExtensions+ForJobStruct`1[[UnityEngine.Rendering.Universal.TileRangeExpansionJob, Unity.RenderPipelines.Universal.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::Execute(UnityEngine.Rendering.Universal.TileRangeExpansionJob&, Unity.RenderPipelines.Universal.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Unity.Jobs.LowLevel.Unsafe.JobRanges&, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089)--adceb2156d08d59afc9749dc2521fd2b
---method=Unity.Jobs.IJobForExtensions+ForJobStruct`1[[UnityEngine.Rendering.Universal.TilingJob, Unity.RenderPipelines.Universal.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::Execute(UnityEngine.Rendering.Universal.TilingJob&, Unity.RenderPipelines.Universal.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Unity.Jobs.LowLevel.Unsafe.JobRanges&, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089)--a6f5259e22ed809ef3937424c4bd686d
 
