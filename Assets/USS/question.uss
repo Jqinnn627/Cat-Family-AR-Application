@@ -1,0 +1,3 @@
+#question-text {
+    -unity-font-definition: resource("NotoSansSC-VariableFont_wght SDF_2");
+}
