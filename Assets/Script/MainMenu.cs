@@ -7,7 +7,7 @@ public class MainMenu : MonoBehaviour
 {
     public void ViewCatFamily()
     {
-        SceneManager.LoadSceneAsync("Cat_Object"); // AR Scene
+        SceneManager.LoadSceneAsync("Cat_Object"); 
     }
 
     public void PlayQuiz()
