@@ -114,19 +114,27 @@ public class Quiz : MonoBehaviour
     {
 
         switch (lang)
-        { 
+        {
             case "en":
                 currentQuiz = quizData.en;
+                yesButton.text = "True";
+                noButton.text = "False";
                 break;
             case "cn":
                 currentQuiz = quizData.cn;
+                yesButton.text = "对";
+                noButton.text = "错";
                 break;
             case "malay":
                 currentQuiz = quizData.malay;
+                yesButton.text = "Betul";
+                noButton.text = "Salah";
                 break;
             default:
                 // Fallback to English if language is not set
                 currentQuiz = quizData.en;
+                yesButton.text = "True";
+                noButton.text = "False";
                 break;
         }
 
