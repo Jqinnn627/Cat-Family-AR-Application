@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEngine.XR.Interaction.Toolkit.Inputs.Readers;
+using TMPro;
 using UnityEngine;
-using UnityEngine.SocialPlatforms.Impl;
-using UnityEngine.UIElements;
 using UnityEngine.InputSystem.XR.Haptics;
 using UnityEngine.SceneManagement;
+using UnityEngine.SocialPlatforms.Impl;
+using UnityEngine.UIElements;
+using UnityEngine.XR.Interaction.Toolkit.Inputs.Readers;
 
 public class Quiz : MonoBehaviour
 {   
@@ -25,7 +26,6 @@ public class Quiz : MonoBehaviour
     private AudioSource audioSource;
     private VisualElement correctIndicator;
     private VisualElement wrongIndicator;
- 
     public class QuizQnA
     {
         public string question;
@@ -122,8 +122,8 @@ public class Quiz : MonoBehaviour
                 break;
             case "cn":
                 currentQuiz = quizData.cn;
-                yesButton.text = "对";
-                noButton.text = "错";
+                yesButton.text = "True";
+                noButton.text = "False";
                 break;
             case "malay":
                 currentQuiz = quizData.malay;
@@ -131,12 +131,12 @@ public class Quiz : MonoBehaviour
                 noButton.text = "Salah";
                 break;
             default:
-                // Fallback to English if language is not set
                 currentQuiz = quizData.en;
                 yesButton.text = "True";
                 noButton.text = "False";
                 break;
         }
+
 
         // Now you can use the 'currentQuiz' array to populate your UI
         if (currentQuiz != null && currentQuiz.Length > 0)
